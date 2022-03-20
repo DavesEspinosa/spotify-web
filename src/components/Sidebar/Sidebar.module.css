@@ -1,0 +1,52 @@
+.SideNavbar{
+    /*width: var(--sidenav-width);*/
+    background-color: var(--sidenav-black);
+    position: relative;
+    width: 180px;
+    margin-bottom: 96px;
+}
+.Fixed{
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    padding-top: 24px;
+}
+.changeWidth{
+    width: 8px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 95px;
+    cursor: col-resize;
+    z-index: 9999;
+}
+.ActiveChange{
+    border-right: 1px solid gray;
+}
+.ActiveChange::before {
+    content: "";
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 999;
+}
+
+.Playlist{
+    margin-top: 24px;
+    padding: 0 var(--sidenav-margin-right) 12px var(--sidenav-margin-left);
+}
+.Playlist h3{
+    color: var(--text-gray);
+}
+.Playlist p{
+    line-height: 20px;
+    color: var(--text-gray);
+}
+.hr{
+    background-color: var(--sidenav-active);
+    border: none;
+    height: 1px;
+    min-height: 1px;
+}
